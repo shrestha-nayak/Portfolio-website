@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title> My portfolio </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+
+        img {
+            transition: transform .2s;
+
+        }
+
+        img:hover {
+            transform: scale(0.9);
+        }
+
+        .line {
+            height: 5px;
+            width: 70px;
+            background-color: #141745;
+            margin: 8px auto;
+        }
+
+        #apps {
+            margin-top: 20px;
+            background-color: #fcd4f4;
+            height: 800px;
+            width: 100%;
+        }
+
+        #games {
+            margin-top: 20px;
+            background-color: #fcfbd4;
+            height: 800px;
+            width: 100%;
+        }
+
+        #chatbots {
+            margin-top: 20px;
+            background-color: #d4ecfc;
+            height: 800px;
+            width: 100%;
+        }
+
+        #MyCarousel {
+            margin-top: 100px;
+        }
+
+        .carousel-inner p {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: darkmagenta;
+            font-size: 25px;
+        }
+
+        #MyCarousel img {
+            height: 350px;
+            margin-top: 25px;
+            border-radius: 15px
+        }
+
+    </style>
+    <div class="container">
+        <section id="apps">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/tjQBKgFJ8vgD5N7srHgdSCN5guPOUHFCuORa5n8Xd-Q/embed"></iframe>
+
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/eDqyBWnYGFGzT3OjTjTNzthe1hwZKIiRiKMRjpAvZA4/embed"></iframe>
+        </section>
+
+        <section id="games">
+            <h1>Games</h1>
+            <div class="line"></div>
+            <div class="carousel slide" id="MyCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <center>
+                            <a href="https://studio.code.org/projects/spritelab/r4Kt1QpU0x5ZuUvqd-iPyVtgGKRi-5EU1t5B-JN6QGA" target="_blank">
+                                <img class="img-responsive" src="https://studio.code.org/v3/files/r4Kt1QpU0x5ZuUvqd-iPyVtgGKRi-5EU1t5B-JN6QGA/.metadata/thumbnail.png"></a>
+                            <p class="carousel-content">Ballon pop</p>
+                        </center>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <a href="https://studio.code.org/projects/spritelab/hBoDvK6UR0aOMMXwHMr8XhmFjIs7YZrb5SkbWnKfLNI" target="_blank">
+                                <img class="img-responsive" src="https://studio.code.org/v3/files/hBoDvK6UR0aOMMXwHMr8XhmFjIs7YZrb5SkbWnKfLNI/.metadata/thumbnail.png"></a>
+                            <p class="carousel-content">Collecting honey</p>
+                        </center>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#MyCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#MyCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </section>
+
+        <section id="chatbots">
+            <h1>ChatBots</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/b3dac7a3-2a40-471f-a74b-2c8de645b681">
+            </iframe>
+
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/7ad59dee-a566-4ee1-bd8a-e9ac327e48a0">
+            </iframe>
+        </section>
+    </div>
+</body>
+
+</html>
